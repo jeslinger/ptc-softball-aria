@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anchored Webpage</title>
 <style>
-  html, body { height: 100%; margin: 0; }
   .anchored-box {
-    position: fixed;       /* pin to viewport */
-    inset: auto 50px 50px auto; /* right:50px; bottom:50px */
-    z-index: 2147483647;   /* sit on top of everything */
+    position: fixed;   /* use absolute if you want it inside a container */
+    left: 800px;       /* X position */
+    top: 400px;        /* Y position */
   }
 </style>
 </head>
