@@ -4,13 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anchored Webpage</title>
-  <style>
-    .anchored-box {
-      position: fixed;   /* Keeps it in place when scrolling */
-      bottom: 50px;      /* 50px margin from the bottom */
-      right: 50px;       /* 50px margin from the right */
-    }
-  </style>
+<style>
+  html, body { height: 100%; margin: 0; }
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end; /* right */
+    align-items: flex-end;     /* bottom */
+    padding: 50px;             /* your margin */
+    box-sizing: border-box;
+  }
+</style>
 </head>
 <body>
   
