@@ -6,13 +6,10 @@
   <title>Anchored Webpage</title>
 <style>
   html, body { height: 100%; margin: 0; }
-  body {
-    display: flex;
-    justify-content: flex-end; /* right */
-    align-items: flex-end;  
-    top: 400;/* bottom */
-    padding: 25px;             /* your margin */
-    box-sizing: border-box;
+  .anchored-box {
+    position: fixed;       /* pin to viewport */
+    inset: auto 50px 50px auto; /* right:50px; bottom:50px */
+    z-index: 2147483647;   /* sit on top of everything */
   }
 </style>
 </head>
